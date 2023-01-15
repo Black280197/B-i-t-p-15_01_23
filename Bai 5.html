@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In ra 2 số</title>
+</head>
+<body>
+<script>
+    alert("Nhập vào 2 số a và b, lưu ý b >= a")
+    let a = 2, b = 1, m = 1;
+    while (a > b) {
+         a = parseInt(prompt("Nhập vào số a: "));
+         b = parseInt(prompt("Nhập vào số b: ")); console.log(a,b);
+        if (a <= b) {
+            for (let i = a; i <= b; i++) {
+                if (i % 5 === 0) {
+                    m *= i;
+                }
+            }
+            document.write("<h1>",m,"</h1>");
+        } else alert("Nhập lại a và b thỏa mãn b >= a");
+    }
+</script>
+</body>
+</html>
